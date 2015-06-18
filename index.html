@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Effective JavaScript: Pamplona</title>
+    <title>Bull Run Arcade Game</title>
     <link rel="stylesheet" href="css/style.css">
-	<link href='http://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Cuprum:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Exo+2:800,500' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Alfa+Slab+One' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<div id="container">
-		<div id="gameCanvas"></div>
+		<div class="frame">
+			<div class="title"><h1>ARCADE BULL RUN</h1></div>
+			<div class="scoreBox">
+				<div id="scoreCircle"></div>
+			</div>
+			<div id="gameCanvas"></div>
+			<div class="intructBox">As they do every year in Pamplona, Spain, our character needs to outrun the bulls. <br />
+			The keyboard arrows move the character up, down, left or right.<br />
+			The further to the left he starts, the more poits he gets when he outruns the bulls.<br />
+			Esc key resets the game.</div>
+		</div>
 	</div>
     <script src="js/resources.js"></script>
     <script src="js/app.js"></script>

@@ -23,11 +23,17 @@ var Engine = (function(global) {
         win = global.window,
         canvas = doc.createElement('canvas'),
         ctx = canvas.getContext('2d'),
-        lastTime;
+		scoreCanvas = doc.createElement('canvas'),
+		ctx2 = scoreCanvas.getContext('2d'),
+        lastTime
 
 	canvas.width = 505;
 	canvas.height = 606;
 	doc.getElementById('gameCanvas').appendChild(canvas);
+	doc.getElementById('scoreCircle').appendChild(scoreCanvas);
+	scoreCanvas.width = 80;
+	scoreCanvas.height = 80;
+	
 
       /* define the runAnimation boolean as an obect
        * so that it can be modified by reference
@@ -162,7 +168,7 @@ var Engine = (function(global) {
             }
         }
 
-		drawInstructions();
+		//drawInstructions();
 		
         renderEntities();
     }
@@ -234,6 +240,7 @@ var Engine = (function(global) {
      * from within their app.js files.
      */
     global.ctx = ctx;
+	global.ctx2 = ctx2;
 	global.runAnimation = runAnimation;
 	global.doc = doc;
 })(this);

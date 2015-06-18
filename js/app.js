@@ -7,7 +7,8 @@
 		homeY = 5 * 83 - 25,
 		count = 0,
 		xVal = 0,
-		notCollided = true;
+		notCollided = true,
+		myScore = document.getElementsByClassName('scoreCircle');
 
 	function getLane() {
 	    // Use random number from 1 to 3 to assign a lane to enemy
@@ -20,18 +21,22 @@
 	// Display "Ole!" and a counter on reaching the right end of the screen.
 	// If 0 or less, display "Keep running!"
 	function showScore(cnt) {
-	    ctx.fillStyle = '#fff';
-	    ctx.fillRect(325, 0, 180, 49);
-		ctx.fillStyle = '#06f';
-		ctx.font = '24px Chewy';
-		ctx.textAlign = 'center';
+		//doc.getElementsByClassName('scoreCircle').innerHTML = "<h1>"+cnt+"</h1>";
+		//document.getElementsByClassName('scoreCircle').innerHTML = "<h1>"+cnt+"</h1>";
+		//console.log(document.getElementsByClassName('scoreCircle').innerHTML);
+	    ctx2.fillStyle = '#c5d6c6';
+	    ctx2.fillRect(10, 10, 60, 60);
+		ctx2.fillStyle = '#900';
+		ctx2.font = '2.5em bolder, Arial';
+		//ctx2.font-weight = 'bold';
+		ctx2.textAlign = 'center';
 
 	    if (cnt >= 0) {
-	        ctx.fillStyle = '#06f';
-	        ctx.fillText('Ole! ' + cnt, 404, 30);
+	        ctx2.fillStyle = '#900';
+	        ctx2.fillText(cnt, 40, 55);
 	    } else {
-	        ctx.fillStyle = '#06f';
-	        ctx.fillText(cnt, 404, 30);
+	        ctx2.fillStyle = '#900';
+	        ctx2.fillText(cnt, 40, 55);
 		}
 	}
 

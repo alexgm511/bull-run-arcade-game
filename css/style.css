@@ -1,4 +1,63 @@
 body {
-	font-family: 'Chewy', cursive;
-    text-align: center;
+	background-color: #f6e094;
+	font-family: 'Exo 2', sans-serif;
+	/*font-family: 'Cuprum', sans-serif;*/
+}
+#container {
+}
+.title {
+	width:500px;
+	height: 40px;
+	text-align: center;
+	margin-bottom: 5px;
+	background-color: #c5d6c6;
+	border: 3px solid #F60;
+	border-radius: 10px;
+}
+.title  h1{
+	font-family: 'Alfa Slab One', serif;
+	/* font-family: 'Bevan', serif; */
+	/*font-weight: 800;*/
+	word-spacing: 0.4em;
+	letter-spacing: 0.2em;
+	margin: 0;
+	color: #900;
+}
+.frame {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #600;
+	padding: 10px;
+	width:505px;
+	height: 100%;
+	border: 3px solid #666;
+	border-radius: 10px;
+}
+.scoreBox {
+	width: 66%;
+	height: 80px;
+	text-align: right;
+	margin-bottom: -35px;
+}
+#scoreCircle {
+	font-family: 'Alfa Slab One', serif;
+	color: #900;
+	width: 80px;
+	height: 80px;
+	margin-left: 200px;
+	text-align: center;
+	background-color: #c5d6c6;
+	border: 3px solid #F60;
+	border-radius: 50%;
+}
+.intructBox {
+	width:480px;
+	height: 100%;
+    margin: 5px;
+	padding: 10px;
+    background-color: #ffffff;
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+	border-radius: 10px;
+
 }
