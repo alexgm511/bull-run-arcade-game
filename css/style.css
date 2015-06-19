@@ -2,13 +2,16 @@ body {
 	background-color: #f6e094;
 }
 #container {
+	margin-left: auto;
+	margin-right: auto;
+	width:505px;
 }
 .title {
 	width:500px;
 	height: 40px;
 	text-align: center;
 	background-color: #c5d6c6;
-	border: 3px solid #F60;
+	border: 3px solid #146044;  
 	border-radius: 10px;
 }
 .title  h1{
@@ -25,23 +28,27 @@ body {
 	padding: 10px;
 	width:505px;
 	height: 100%;
-	border: 3px solid #666;
+	border: 3px solid #333;
 	border-radius: 10px;
+	-webkit-box-shadow: 0px 8px 18px 5px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 8px 18px 5px rgba(0,0,0,0.75);
+	box-shadow: 0px 8px 18px 5px rgba(0,0,0,0.75);
 }
 #gameCanvas {
 	margin-top: -35px;
 }
 .scoreBox {
-	width: 33%;
+	width: 45%;
 	height: 86px;
 	text-align: right;
+	padding-top: 15px;
 }
 #scoreCircle {
 	width: 80px;
 	height: 80px;
 	margin-left: 130px;
 	background-color: #c5d6c6;
-	border: 3px solid #F60;
+	border: 3px solid #146044;
 	border-radius: 50%;
 }
 .intructBox {
@@ -59,7 +66,7 @@ body {
 }
 .controls {
 	position: relative;
-	height: 100px;
+	height: 120px;
 }
 #leftArrow, #rightArrow, #upArrow, #downArrow, #reset { 
 	position: absolute;
@@ -75,15 +82,15 @@ body {
 	line-height: 2.2;
 	color: white;
 	left: 20px;
-	top:25px;
+	top:35px;
 }
 #leftArrow { 
 	left: 230px;
-	top:25px;
+	top:35px;
 }
 #rightArrow {
 	left: 410px;
-	top: 25px;
+	top: 35px;
 }
 #upArrow {
 	left: 320px;
@@ -91,10 +98,10 @@ body {
 }
 #downArrow {
 	left: 320px;
-	top: 50px;
+	top: 70px;
 }
 #upArrow img, #downArrow img {
-	margin-top: 7px;
+	margin-top: 5px;
 }
 #leftArrow img, #rightArrow img {
 	margin-top: 1px;
