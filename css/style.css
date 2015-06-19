@@ -57,12 +57,9 @@ body {
 	height: 100%;
     margin: 5px, 0, 5px, 0;
 	padding: 10px;
-    background-color: #ffffff;
-    opacity: 0.5;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
+    background-color: #d2ac60;
 	border: 3px solid #666;
 	border-radius: 10px;
-
 }
 .controls {
 	position: relative;
