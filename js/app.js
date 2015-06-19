@@ -268,3 +268,21 @@
 	    player.handleInput(allowedKeys[e.keyCode]);
 	});
 	
+	// Add same functionality as key presses for touch
+	document.getElementById('leftArrow').addEventListener('click', function() {
+		player.handleInput('left');
+	});
+	document.getElementById('rightArrow').addEventListener('click', function() {
+		player.handleInput('right');
+	});
+	document.getElementById('upArrow').addEventListener('click', function() {
+		player.handleInput('up');
+	});
+	document.getElementById('downArrow').addEventListener('click', function() {
+		player.handleInput('down');
+	});
+	document.getElementById('reset').addEventListener('click', function() {
+		player.handleInput('esc');
+	});
+	
+	

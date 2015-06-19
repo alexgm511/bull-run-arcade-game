@@ -28,7 +28,7 @@ var Engine = (function(global) {
         lastTime
 
 	canvas.width = 505;
-	canvas.height = 606;
+	canvas.height = 596; //606;
 	doc.getElementById('gameCanvas').appendChild(canvas);
 	doc.getElementById('scoreCircle').appendChild(scoreCanvas);
 	scoreCanvas.width = 80;

@@ -7,7 +7,6 @@ body {
 	width:500px;
 	height: 40px;
 	text-align: center;
-	margin-bottom: 5px;
 	background-color: #c5d6c6;
 	border: 3px solid #F60;
 	border-radius: 10px;
@@ -29,16 +28,18 @@ body {
 	border: 3px solid #666;
 	border-radius: 10px;
 }
+#gameCanvas {
+	margin-top: -35px;
+}
 .scoreBox {
-	width: 66%;
-	height: 80px;
+	width: 33%;
+	height: 86px;
 	text-align: right;
-	margin-bottom: -35px;
 }
 #scoreCircle {
 	width: 80px;
 	height: 80px;
-	margin-left: 200px;
+	margin-left: 130px;
 	background-color: #c5d6c6;
 	border: 3px solid #F60;
 	border-radius: 50%;
@@ -47,11 +48,54 @@ body {
 	font-family: verdana, sans-serif;
 	width:480px;
 	height: 100%;
-    margin: 5px;
+    margin: 5px, 0, 5px, 0;
 	padding: 10px;
     background-color: #ffffff;
     opacity: 0.5;
     filter: alpha(opacity=50); /* For IE8 and earlier */
+	border: 3px solid #666;
 	border-radius: 10px;
 
+}
+.controls {
+	position: relative;
+	height: 100px;
+}
+#leftArrow, #rightArrow, #upArrow, #downArrow, #reset { 
+	position: absolute;
+	width: 80px;
+	height: 40px;
+	background-color: #666;
+	border: 3px solid #333;
+	border-radius: 10px;
+	text-align: center;
+}
+#reset {
+	font-family: verdana, sans-serif;
+	line-height: 2.2;
+	color: white;
+	left: 20px;
+	top:25px;
+}
+#leftArrow { 
+	left: 230px;
+	top:25px;
+}
+#rightArrow {
+	left: 410px;
+	top: 25px;
+}
+#upArrow {
+	left: 320px;
+	top: 0;
+}
+#downArrow {
+	left: 320px;
+	top: 50px;
+}
+#upArrow img, #downArrow img {
+	margin-top: 7px;
+}
+#leftArrow img, #rightArrow img {
+	margin-top: 1px;
 }
