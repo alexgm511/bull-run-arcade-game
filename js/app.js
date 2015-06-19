@@ -3,7 +3,7 @@
 	var myEnemySprite = 'images/enemy-bull.png',
 		myPlayerSprite = 'images/char-mozo.png',
 		myPokedSprite = 'images/bull-&-mozo.png',
-		homeX = 0,
+		homeX = 202,
 		homeY = 5 * 83 - 25,
 		count = 0,
 		xVal = 0,
@@ -27,8 +27,7 @@
 	    ctx2.fillStyle = '#c5d6c6';
 	    ctx2.fillRect(10, 10, 60, 60);
 		ctx2.fillStyle = '#900';
-		ctx2.font = '2.5em bolder, Arial';
-		//ctx2.font-weight = 'bold';
+		ctx2.font = '40px Alfa Slab One';
 		ctx2.textAlign = 'center';
 
 	    if (cnt >= 0) {
@@ -124,7 +123,7 @@
 	    // If enemy is ouside the canvas send back to beginning, else continue moving
 	    if (this.x > 505) {
 			this.x = -101;
-			//this.y = getLane();
+			this.y = getLane();
 			this.mySpeed(); 
 	    } else {
 	        collision(player.x + 30, player.y, this.x, this.y, this);

@@ -42,11 +42,11 @@ var Engine = (function(global) {
 		value: true
 	};
 	// add click listener to canvas
-	doc.getElementById('gameCanvas').addEventListener('click', function() {
+	/*doc.getElementById('gameCanvas').addEventListener('click', function() {
 		// flip flag
 		runAnimation.value = !runAnimation.value;
 		init();
-	});
+	});*/
 
 
     /* This function serves as the kickoff point for the game loop itself
